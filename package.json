@@ -1,0 +1,24 @@
+{
+  "name": "hairday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server server.json --watch --port 3333"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroairees/hairday.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pedroairees/hairday/issues"
+  },
+  "homepage": "https://github.com/pedroairees/hairday#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
