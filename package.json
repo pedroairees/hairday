@@ -1,17 +1,19 @@
 {
   "name": "hairday",
   "version": "1.0.0",
-  "description": "",
+  "description": "Aplicação Web para agendamentos para corte de cabelo",
   "main": "index.js",
   "scripts": {
-    "server": "json-server server.json --watch --port 3333"
+    "server": "json-server server.json --watch --port 3333",
+    "dev": "webpack server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pedroairees/hairday.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pedro Aires",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
@@ -20,5 +22,11 @@
   "homepage": "https://github.com/pedroairees/hairday#readme",
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
   }
 }
