@@ -15,7 +15,6 @@
   "keywords": [],
   "author": "Pedro Aires",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/pedroairees/hairday/issues"
   },
@@ -24,6 +23,10 @@
     "json-server": "^1.0.0-beta.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.6",
     "style-loader": "^4.0.0",
