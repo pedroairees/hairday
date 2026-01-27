@@ -6,6 +6,6 @@ import "./styles/global.css"
 import "./styles/form.css"
 import "./styles/schedule.css"
 
-import dayjs from "dayjs"
-
-console.log(dayjs().format("HH:mm"))
+import "./modules/form/form.js"
+import "./modules/load-page.js"
+import "./modules/schedules/load.js"
