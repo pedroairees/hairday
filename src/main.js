@@ -8,4 +8,3 @@ import "./styles/schedule.css"
 
 import "./modules/form/form.js"
 import "./modules/load-page.js"
-import "./modules/schedules/load.js"

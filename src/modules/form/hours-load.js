@@ -12,5 +12,4 @@ export function hoursLoad({ date }) {
             availeble: isHourPast
         }
     })
-    console.log(opening)
 }
