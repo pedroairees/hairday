@@ -14,17 +14,17 @@
   overflow-y: scroll;
 }
 
-.form > header {
+.form>header {
   max-width: 21rem;
   margin-bottom: 1.5rem;
 }
 
-.form > header h1 {
+.form>header h1 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.form > header p {
+.form>header p {
   color: #98959d;
   font-size: 0.87rem;
 }
@@ -144,6 +144,7 @@
 .hour:not(.hour-unavailable):hover {
   border: 1px solid #b8952e;
   color: #b8952e;
+  transition: border .4s;
 }
 
 @media (max-width: 1100px) {
