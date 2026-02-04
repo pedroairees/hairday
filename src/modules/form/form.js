@@ -10,30 +10,30 @@ selectedDate.value = dateToday;
 selectedDate.min = dateToday;
 
 form.onsubmit = (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  try {
-    const name = clienteName.value.trim();
-    if (!name) {
-      return alert("Informe seu nome por favor!");
+    try {
+        const name = clienteName.value.trim();
+        if (!name) {
+            return alert("Informe seu nome por favor!");
+        }
+        const hourSelected = document.querySelector(".hour-selected");
+        if (!hourSelected) {
+            return alert("Selecione um horário");
+        }
+
+        const [hour] = hourSelected.innerText.split(":");
+        const when = dayjs(selectedDate.value).add(hour, "hour");
+
+        const id = new Date().getTime();
+
+        return {
+            id,
+            name,
+            when,
+        };
+    } catch (error) {
+        alert("Não foi possível realizar o agendamento!");
+        console.log(error);
     }
-    const hourSelected = document.querySelector(".hour-selected");
-    if (!hourSelected) {
-      return alert("Selecione um horário");
-    }
-
-    const [hour] = hourSelected.innerText.split(":");
-    const when = dayjs(selectedDate.value).add(hour, "hour");
-
-    const id = new Date().getTime();
-
-    console.log({
-      id,
-      name,
-      when,
-    });
-  } catch (error) {
-    alert("Não foi possível realizar o agendamento!");
-    console.log(error);
-  }
 };
