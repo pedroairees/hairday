@@ -8,5 +8,5 @@ export async function schedulesDay() {
     const date = selectedDate.value;
     const dailySchedules = await scheduleFetchByDay({ date });
     scheduleShow({ dailySchedules });
-    hoursLoad({ date });
+    hoursLoad({ date, dailySchedules });
 }
