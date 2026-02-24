@@ -92,7 +92,7 @@ src/
 
 ## Licença
 
-ISC
+[LICENSE](https://github.com/pedroairees/hairday/blob/main/LICENSE)
 
 ## Autor
 
