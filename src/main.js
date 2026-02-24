@@ -9,3 +9,4 @@ import "./styles/schedule.css"
 import "./modules/form/form.js"
 import "./modules/load-page.js"
 import "./modules/form/date-change.js"
+import "./modules/schedules/cancel.js";
